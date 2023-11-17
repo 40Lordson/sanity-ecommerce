@@ -1,10 +1,8 @@
-import { client, urlFor } from "@/lib/sanity";
-import Image from "next/image";
+"use client";
 
-const Hero = async () => {
-  const query = "*[_type == 'hero']";
+import Link from "next/link";
 
-  const data = await client.fetch(query);
+const Hero = () => {
   return (
     <div className="sm:flex sm:justify-between w-full mt-10">
       <div className="container space-y-2">
@@ -16,6 +14,30 @@ const Hero = async () => {
           consequuntur velit eveniet repudiandae temporibus ullam doloribus esse
           quae deserunt?
         </p>
+      </div>
+      <div className="mt-10 border px-2 py-1 border-primary w-fit flex gap-2 content-center justify-center container rounded">
+        <Link
+          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary"
+          href="/men"
+        >
+          Men
+        </Link>
+        <Link
+          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary
+
+"
+          href="/women"
+        >
+          Women
+        </Link>
+        <Link
+          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary
+
+"
+          href="/teen"
+        >
+          Teens
+        </Link>
       </div>
     </div>
   );
