@@ -1,5 +1,4 @@
 import {createClient} from 'next-sanity'
-import urlBuilder from '@sanity/image-url'
 import ImageUrlBuilder from '@sanity/image-url'
 
 export const client = createClient({

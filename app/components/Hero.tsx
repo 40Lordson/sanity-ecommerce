@@ -1,6 +1,5 @@
 import { client, urlFor } from "@/lib/sanity";
 import Image from "next/image";
-import { useState } from "react";
 
 const Hero = async () => {
   const query = "*[_type == 'hero']";
@@ -17,9 +16,6 @@ const Hero = async () => {
           consequuntur velit eveniet repudiandae temporibus ullam doloribus esse
           quae deserunt?
         </p>
-      </div>
-      <div className="">
-        <Image src={urlFor(data.image1).url()} alt="hero" />
       </div>
     </div>
   );
