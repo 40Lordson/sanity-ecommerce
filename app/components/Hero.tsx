@@ -15,15 +15,15 @@ const Hero = () => {
           quae deserunt?
         </p>
       </div>
-      <div className="mt-10 border px-2 py-1 border-primary w-fit flex gap-2 content-center justify-center container rounded">
+      <div className="mt-10 border px-2 py-1 border-primary w-fit flex gap-1 content-center justify-center container rounded">
         <Link
-          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary"
+          className="hover:bg-secondary rounded px-5 py-1 text-slate-500 hover:text-primary"
           href="/men"
-        >
+        > 
           Men
         </Link>
         <Link
-          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary
+          className="hover:bg-secondary rounded px-5 py-1 text-slate-500 hover:text-primary
 
 "
           href="/women"
@@ -31,7 +31,7 @@ const Hero = () => {
           Women
         </Link>
         <Link
-          className="hover:bg-secondary rounded px-5 text-slate-500 hover:text-primary
+          className="hover:bg-secondary rounded px-5 py-1 text-slate-500 hover:text-primary
 
 "
           href="/teen"
