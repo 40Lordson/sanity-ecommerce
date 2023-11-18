@@ -17,12 +17,12 @@ const Newest = async () => {
   return (
     <div className="mt-10 container">
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-bold text-primary tracking-wide">
+        <h1 className="text-lg font-bold text-primary tracking-wide sm:text-3xl">
           Our Newest Products
         </h1>
         <Link
           href="/"
-          className="text-sm text-slate-600 flex items-center gap-1"
+          className="text-sm text-slate-600 flex items-center gap-1 sm:text-xl"
         >
           see all{" "}
           <span className="">
@@ -43,11 +43,11 @@ const Newest = async () => {
           </span>
         </Link>
       </div>
-      <span className="mt-5 grid grid-cols-2 gap-x-1 gap-y-2">
+      <span className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-x-1 gap-y-2">
       {data.map((product)=> (
-        <div className="h-[220px] bg-secondary rounded-lg" key={product._id}>
+        <div className="h-[220px] w-fit bg-secondary rounded-lg sm:w-fit" key={product._id}>
             <div className="">
-                <Image src={product.imageUrl} className="h-[170px] w-[250px] object-cover rounded-t-lg hover:opacity-70" alt={product.name} width={200} height={300}/>
+                <Image src={product.imageUrl} className="h-[170px] w-screen object-cover rounded-t-lg hover:opacity-70" alt={product.name} width={200} height={300}/>
                 <div className="flex justify-between items-center px-2 py-1">
                   <Link href={product.slug} className="text-xs text-primary hover:opacity-70">{product.name}</Link>
                   <p className="text-xs text-primary font-bold">${product.price}</p>
