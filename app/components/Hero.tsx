@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="sm:flex sm:justify-between w-full mt-10">
+    <div className="sm:flex sm:justify-between w-full mt-24">
       <div className="container space-y-2">
-        <h1 className="text-4xl font-bold text-primary">
+        <h1 className="text-4xl font-bold text-primary tracking-wide">
           Top Fashion for top price!
         </h1>
         <p className="text-sm leading-relaxed text-gray-500">

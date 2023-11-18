@@ -14,8 +14,8 @@ const Navbar = () => {
   ];
   const pathname = usePathname();
   return (
-    <div className="container py-3 w-full h-fit border-b border-slate-200 flex justify-between items-center">
-      <div className="">
+    <div className="backdrop-blur-lg container top-0 fixed py-3 w-full h-fit border-b border-slate-200 flex justify-between items-center">
+      <div className=""> 
         <p className="text-primary font-bold text-lg">Sanity Ecommerce</p>
         {links.map((link, idx) => (
           <div className="hidden" key={idx}>
