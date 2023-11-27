@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Hero = async () => {
   return (
-    <div className="w-full mt-24">
+    <div className="w-full">
       <div className="container space-y-2">
         <h1 className="text-4xl sm:text-6xl sm:w-[600px] font-bold text-primary tracking-wide">
           Top Fashion for top price!

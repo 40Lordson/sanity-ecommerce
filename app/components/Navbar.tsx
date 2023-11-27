@@ -15,7 +15,7 @@ const Navbar = () => {
   const pathname = usePathname();
   return (
     <div className="backdrop-blur-lg  top-0 left-0 right-0 container w-screen fixed py-3 h-fit border-b border-slate-200 flex justify-between items-center">
-      <p className="text-primary font-bold text-lg sm:text-2xl">Sanity Ecommerce</p>
+      <Link href='/' className="text-primary font-bold text-lg sm:text-2xl">Sanity Ecommerce</Link>
       <div className="flex justify-between items-center gap-6"> 
         {links.map((link, idx) => (
           <div className="hidden sm:flex" key={idx}>

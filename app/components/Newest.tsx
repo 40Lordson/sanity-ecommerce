@@ -15,7 +15,7 @@ const Newest = async () => {
   const data = ( await client.fetch(query) ) as Product[];
 
   return (
-    <div className="mt-10 container">
+    <div className="mt-10 container mb-10">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-bold text-primary tracking-wide sm:text-3xl">
           Our Newest Products
@@ -49,7 +49,7 @@ const Newest = async () => {
             <div className="">
                 <Image src={product.imageUrl} className="h-[170px] w-screen object-cover rounded-t-lg hover:opacity-70" alt={product.name} width={200} height={300}/>
                 <div className="flex justify-between items-center px-2 py-1">
-                  <Link href={product.slug} className="text-xs text-primary hover:opacity-70">{product.name}</Link>
+                  <Link href={`/product/${product.slug}`} className="text-xs text-primary hover:opacity-70">{product.name}</Link>
                   <p className="text-xs text-primary font-bold">${product.price}</p>
                 </div>
                 <p className="text-xs px-2 opacity-70">{product.categoryName}</p>
