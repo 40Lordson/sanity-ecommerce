@@ -32,7 +32,7 @@ const Hero = async () => {
           className="hover:bg-secondary rounded px-5 py-1 text-slate-500 hover:text-primary sm:text-2xl
 
 "
-          href="/teen"
+          href="/teens"
         >
           Teens
         </Link>
