@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Men", href: "/men" },
     { name: "Women", href: "/women" },
-    { name: "Teen", href: "/teen" },
+    { name: "Teen", href: "/teens" },
   ];
   const pathname = usePathname();
   return (
